@@ -34,9 +34,7 @@ nav, ul{
   background-color: black;
   padding: 1rem;
   list-style: none;
-
   color: aliceblue;
-  border-radius: 6px;
   text-align: center; 
   text-decoration: none;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -68,15 +66,13 @@ main {
   align-items: center;
   gap: 2rem;
   padding: 2rem;
-}
-main {
   flex: 1;
 }
 
 h1 { text-align: center;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      padding: 1rem;
-     gap: 10px; }
+     }
 
 /* ---------- CARDS ---------- */
 .card1 {
@@ -92,16 +88,23 @@ h1 { text-align: center;
 .about-text {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 1rem;
   gap: 2rem;
+  flex: 1;
   
 }
 
 
-.about-image{
-  
-  border-color: rgb(170, 159, 11);
- border-radius: 2%;
+.about-image {
+  max-width: 180px;
+  text-align: center;
+}
+
+.self-portrait {
+    width: 160px;
+  height: auto;
+  max-width: 180px;
 }
 
 /* Country card */
@@ -179,13 +182,10 @@ p{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}
-
-.resources {
   background-color: white;
   gap: 2rem;
-  
 }
+
 
 .resources a {
   color: black;
