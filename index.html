@@ -1,108 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDD 131 | Home Page | Sephora Diaz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Temple album | Sephora Diaz</title>
+    <meta name="author" content="Sephora Diaz">
+    <meta name="description" content="This is the temple album activity for WDD131">
 
-  <meta name="description" content="Personal homepage for WDD 131">
-  <meta name="author" content="Sephora Diaz">
+    <link rel="stylesheet" href="styles/temple.css">
+    <link rel="stylesheet" href="styles/temple-large.css">
 
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/temple.js" defer></script>
 </head>
-
 <body>
-  <header>
-    <div class="title">WDD 131: Dynamic Web Fundamentals</div>
+    <header>
+        <h1 class="logoTitle">Temple album</h1>
 
-    <nav>
-      <ul class="navbar">
-        <li><a href="https://www.linkedin.com/in/sephora-diaz-altamirano-68b409262/" id="linkedin">LinkedIn</a></li>
-        <li><a href="https://byupw.instructure.com/" id="canvas">Canvas</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/46?lang=spa" id="scriptures">Scripture</a></li>
-        <li><a href="#" id="final-project">Final Project</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav class="nabvar">
+            <ul>
+                <li><a href="#" id="">Home</a></li>
+                <li><a href="#" id="">Old</a></li>
+                <li><a href="#" id="">New</a></li>
+                <li><a href="#" id="">Large</a></li>
+                <li><a href="#" id="">Small</a></li>
+                
+            </ul>
+        </nav>
 
-  <main>
+    </header>
 
-    <h1>Sephora Diaz Altamirano</h1>
+    <main>
 
-  <div class="card-container">
+        <h1>Home</h1>
 
-    <section class="card1">
-      <h2 class="title1">About Me</h2>
+        <section class="imagesDisplay">
 
-
-
-      <div class="about-text">
-
-      <p>
-        Hi! My name is Sephora Díaz, and I’m from Peru. I’m an ESL teacher and a student
-        passionate about learning, self-growth, and building new skills. I’m currently
-        exploring software development and improving my technical abilities while also
-        nurturing my creative side. I enjoy learning about art, history and politics, ever
-        since i was little i got a passion for creating, from drawings, to dance, to craft
-        and thats when i realized i had a designer's spirit, working with css and html,
-        allowed me to dive deeper into the developer world, which i currrently enjoy.
-      </p>
-
-      <div class="about-image">
-
-      <img src="images/self-portrait.png" alt="Sephora's-self-portrait" class="self-portrait">
-      </div>
-
-    </div>
-
-       <h2>Lima, Peru</h2>
-
-      <div class="country-text">
-
-        <div class="flag-box">
-              
-                 <img src="images/Peru-flag.jpg" class="country-image" alt="Peru-flag">
-
-              <p class="flag-caption">Official flag of Perú</p>
-        </div>
-
-         <p>
-             Peru is a country located on the western coast of South America, bordered by the
-             Pacific Ocean. It is known for its rich cultural heritage, diverse geography, and
-            ancient civilizations such as the Incas. Peru is home to landmarks like Machu Picchu
-            and has a wide variety of climates, ranging from coastal deserts to Andean mountains
-            and the Amazon rainforest.
-         </p>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
+                <figcaption>Salt Lake City temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
+                <figcaption>Salt Lake City temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
+                <figcaption>Salt Lake City temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
+                <figcaption>Salt Lake City temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
+                <figcaption>Salt Lake City temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
+                <figcaption>Salt Lake City temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
+                <figcaption>Salt Lake City temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
+                <figcaption>Salt Lake City temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
+                <figcaption>Salt Lake City temple</figcaption>
+            </figure>
 
 
 
-      </div>
+>
 
+        </section>
 
-    </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Sephora Diaz | Lima, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
 
     
-
-    <section class="card2">
-      <h2>Web Development Resources</h2>
-
-      <ul class="resources">
-        <li><a href="https://www.w3schools.com" id="w3schools">W3Schools</a></li>
-        <li><a href="https://developer.mozilla.org" id="MDN-Web-Docs">MDN Web Docs</a></li>
-        <li><a href="https://github.com" id="Github">GitHub</a></li>
-        <li><a href="https://picsum.photos" id="Lorem-picsum">Lorem Picsum</a></li>
-        <li><a href="https://codepen.io/" id="codepen">Codepen</a></li>
-        <li><a href="https://flexboxfroggy.com" id="Flexbox-froggy">Flexbox Froggy</a></li>
-        <li><a href="https://cssgridgarden.com/" id="Grid-garden">Grid Garden</a></li>
-      </ul>
-    </section>
-  </div>
-  </main>
-
-  <footer>
-    <p>© <span id="currentyear"></span> Sephora Diaz | Lima, Peru</p>
-    <p id="lastModified"></p>
-  </footer>
 </body>
 </html>
