@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: rgb(3, 78, 75);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+
+.logoTitle {
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
+}
+
+/* ===== NAV (MOBILE) ===== */
+nav ul {
+  display: none;               
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(3, 78, 75);
+  text-align: center;
+
+  position: absolute;   
+  top: 100%;            
+  right: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  padding: 1rem;
+  display: block;
+}
+
+nav a:hover {
+  background-color: azure;
+  color: black;
+}
+
+
+/* ===== MAIN ===== */
+main h1 {
+  text-align: center;
+  padding: 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== IMAGES (MOBILE) ===== */
+.imagesDisplay {
+  display: grid;
+  grid-template-columns: 1fr;  
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.imagesDisplay img {
+  width: 100%;
+  height: auto;
+}
+
+.imagesDisplay figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #000;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300; 
+  font-style: italic;
+  text-align: center; 
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: rgb(3, 78, 75);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+#menuButton { 
+  display: block; 
+  background: none; 
+  border: none; 
+  font-size: 2rem; 
+  color: white; 
+  cursor: pointer; 
+  padding-left: 8rem;
+} 
+
+#menuButton::before { content: "☰"; } 
+
+#menuButton.show::before { content: "✕"; }
+
+nav ul.show {
+  display: block;
+}

@@ -1,91 +1,44 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@media (min-width: 768px) {
 
-header{
-    background-color: rgb(3, 78, 75);
-    color: white;
-    padding: 2rem;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  #menuButton {
+    display: none;
+  }
 
-.logoTitle {
-    font-family: "Nunito", sans-serif;
-    font-style: italic;
-}
-nav ul {
+  header {
     display: flex;
-    gap:  1.5rem;
-    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .logoTitle {
+    margin-right: auto; 
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    position: static;  
+    width: auto;        
+    gap: 1.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: large;
-    font-family: "Nunito", sans-serif;
-    border-radius: .5rem;
-    padding: 1rem;
-    
+  }
 
-}
+  nav a { 
+    color: white; 
+    text-decoration: none; 
+    font-size: large; 
+    font-family: "Nunito", sans-serif; 
+    border-radius: .5rem; 
+    padding: 1rem; }
 
-nav a:hover {
-    transition: 4ms;
-    background-color: azure;
-    color: black;
-}
-
-main h1 {
-    text-align: center;
-    padding: 1.5rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.imagesDisplay {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.imagesDisplay figure {
-  text-align: center;
-}
-
-.imagesDisplay img {
-  width: 100%;
-  height: auto;
-}
-
-.imagesDisplay figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #000;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-
-img {
-    width: 300px;
-    height: auto;
-    padding: .5rem;
-}
-footer {
-    background-color: rgb(3, 78, 75);
-    color: white;
-    padding: 1.5rem;
-    text-align: center;
-    font-family: "Nunito", sans-serif;
-    font-size: medium;
+  .imagesDisplay {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 0 auto;
+  }
 }

@@ -8,3 +8,14 @@ currentyear.textContent = today.getFullYear();
 lastModified.innerHTML = `Last Modified: <span class="highlight">
   ${document.lastModified}
 </span>`;
+
+
+
+
+const menuButton = document.querySelector('#menuButton');
+const mainnav = document.querySelector('.navbar ul');
+
+menuButton.addEventListener('click', () => {
+  mainnav.classList.toggle('show');
+  menuButton.classList.toggle('show');
+});
