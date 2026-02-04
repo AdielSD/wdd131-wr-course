@@ -3,95 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 | Temple album | Sephora Diaz</title>
+    <title>Document</title>
     <meta name="author" content="Sephora Diaz">
-    <meta name="description" content="This is the temple album activity for WDD131">
-
-    <link rel="stylesheet" href="styles/temple.css">
-    <link rel="stylesheet" href="styles/temple-large.css">
+    <meta name="description" content="This is a country website for my project">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <script src="scripts/temple.js" defer></script>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 class="logoTitle">Temple album</h1>
 
-        <button id="menuButton" aria-label="Open navigation menu"></button>
-
-
-        <nav class="navbar">
-            <ul class="navigation">
-                <li><a href="#" id="">Home</a></li>
-                <li><a href="#" id="">Old</a></li>
-                <li><a href="#" id="">New</a></li>
-                <li><a href="#" id="">Large</a></li>
-                <li><a href="#" id="">Small</a></li>
-                
-            </ul>
-        </nav>
+        <h1>Chongqing, China</h1>
 
     </header>
-
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/chongqing-city-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/chongqing-city-medium.webp" media="(min-width: 500px)">
+                <img src="images/chongqing-city-small.webp" alt=" Chongqing city" width="500" height="280">
+            </picture>
+        </div>
 
-        <h1>Home</h1>
+        <div class="container">
 
-        <section class="imagesDisplay">
+        
+     
+        <div class="box">
+            <h2>Data</h2>
+            <p>Area: 82,400 sq km</p>
+            <p>Population: ~32,000,000</p>
+            <p>Country: China</p>
+            <p>Municipality Status: Direct-controlled municipality</p>
+            <p>Languages: Mandarin Chinese (Southwestern Mandarin)</p>
+            <p>Currency: Chinese Yuan (CNY)</p>
+            <p>Time Zone: UTC +8</p>
+            <p>Calling Code: +86</p>
+            <p>Internet TLD: .cn</p>
 
-            <figure>
-                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
-                <figcaption>Salt Lake City temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
-                <figcaption>Salt Lake City temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
-                <figcaption>Salt Lake City temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
-                <figcaption>Salt Lake City temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
-                <figcaption>Salt Lake City temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
-                <figcaption>Salt Lake City temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
-                <figcaption>Salt Lake City temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
-                <figcaption>Salt Lake City temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/salt-lake-temple.jpg" alt="Temple of Salt Lake City">
-                <figcaption>Salt Lake City temple</figcaption>
-            </figure>
+        </div>
+
+        <div class="box">
+            <h2>Weather 🌥️</h2>
+            <p>Temperature: ~18 °C</p>
+            <p>Conditions: Humid & Cloudy</p>
+            <p>Wind: ~6 km/h</p>
+            <p>Humidity: ~75%</p>
+            <p>Rainfall (annual): ~1,200 mm</p>
 
 
+        </div>
 
+        </div>
 
-
-        </section>
 
     </main>
-
     <footer>
         <p>© <span id="currentyear"></span> Sephora Diaz | Lima, Peru</p>
         <p id="lastModified"></p>
+        
     </footer>
-
     
 </body>
 </html>
