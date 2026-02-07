@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy loading image | WDD131 | Sephora Diaz</title>
+    <meta name="author" content="Sephora Diaz">
+    <meta name="description" content="Practicing lazy loading">
+
+    <link rel="stylesheet" href="styles/lazy.css">
+    
+    <script src="scripts/lazy.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1> images - lazyload </h1>
+
+    </header>
+    <main>
+
+        <div class="content">
+        
+        <picture>
+            <img src="https://picsum.photos/id/45/4592/2576" alt="placeholder image" loading="lazy"
+            width="600" height="400">
+
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/49/1280/792" alt="placeholder img2" loading="lazy"
+            width="600" height="400">
+            
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/43/1280/831" alt="placeholder img3" loading="lazy"
+            width="600" height="400">
+            
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/62/2000/1333" alt="placeholder img4" loading="lazy"
+            width="600" height="400">
+        </picture>
+        <picture>
+            <img src=" https://picsum.photos/id/122/4147/2756" alt="placeholder img5" loading="lazy"
+            width="600" height="400">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/id/277/5000/3333" alt=" placeholder img6" loading="lazy"
+            width="600" height="400">
+            
+        </picture>
+
+        </div>
+
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Sephora Diaz | Lima, Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
