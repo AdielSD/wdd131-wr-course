@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #4B42D4;       /* Darker purple */
+    --secondary-color: #F4F6FF;     /* Light background */
+    --accent-color: #D6336C;        /* Darker pink for better contrast */
+    --text-color: #222222;          /* Darker body text */
+}
+
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-color);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .wireframe {
+            border: 2px solid var(--primary-color);
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px 0;
+            text-align: center;
+            background-color: #fafafa;
+        }
+
+        .button-sample {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
