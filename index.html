@@ -1,97 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overthinker simulator Site plan | WDD131 | Sephora Diaz </title>
-    <meta name="author" content="Sephora Diaz">
-    <meta name="description" content="This is a siteplan for the final project"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form | Sephora Diaz</title>
+  <meta name="author" content="Sephora Diaz">
+  <meta name="description" content="A product review form demonstrating form design and interactivity for WDD 131.">
 
-    <link rel="stylesheet" href="site-plan.css">
 
+<!----FONT LINKS---->
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!----STYLESHEETS AND SCRIPT---->
+
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/form-large.css">
+
+  <script src="scripts/form.js" defer></script>
 </head>
+
 <body>
-    <header>
+  <header>
+    <h1>Product Review</h1>
+  </header>
 
-        <h1 class="Logo">🌀Overthinker Simulator</h1></div>
+  <main>
+    <form method="get" action="review.html" class="pform">
+      <!-- Product Selection -->
+      <fieldset>
+        <legend>Product Information</legend>
 
-        <h4> An Interactive Website About Overthinking</h4>
+        <label for="productName">Product Name *</label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product...</option>
+        </select>
+      </fieldset>
 
-    </header>
-    <main>
-        <section>
-    <h2>Site Name</h2>
-    <p><strong>Overthinker Simulator</strong></p>
-    <p>
-        I chose this name because it clearly represents the purpose of the site.
-        It communicates that the website will simulate exaggerated overthinking
-        patterns in a playful and interactive way. The name is simple, memorable,
-        and directly connected to the concept of the project.
-    </p>
-</section>
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating</legend>
 
-<section>
-    <h2>Site Purpose</h2>
-    <p>
-        The purpose of this website is to create an interactive and humorous
-        experience where users can see how overthinking works in everyday
-        situations. Users will select or input a scenario and the website will
-        simulate exaggerated thought spirals. Afterward, users will have the
-        option to "exit the spiral" through calming prompts or grounding
-        exercises. The site combines entertainment with interactive design.
-    </p>
-</section>
+        <label for="rating1">
+          <input type="radio" id="rating1" name="rating" value="1" required> ☆
+        </label>
+        <label for="rating2">
+          <input type="radio" id="rating2" name="rating" value="2"> ☆☆
+        </label>
+        <label for="rating3">
+          <input type="radio" id="rating3" name="rating" value="3"> ☆☆☆
+        </label>
+        <label for="rating4">
+          <input type="radio" id="rating4" name="rating" value="4"> ☆☆☆☆
+        </label>
+        <label for="rating5">
+          <input type="radio" id="rating5" name="rating" value="5"> ☆☆☆☆☆
+        </label>
+      </fieldset>
 
-<section>
-    <h2>Scenarios</h2>
-    <ul>
-        <li>“They haven’t replied to my message in two hours. What does that mean?”</li>
-        <li>“I said something awkward in class. Is everyone thinking about it?”</li>
-        <li>“Did I make a bad impression during that conversation?”</li>
-    </ul>
-</section>
+      <!-- Installation Date -->
+      <fieldset>
+        <legend>Installation Details</legend>
 
-<section>
-    <h2>Color Schema</h2>
-    <p><strong>Primary Color:</strong> #6C63FF – Used for headings and accents.</p>
-    <p><strong>Secondary Color:</strong> #F5F7FF – Used as the main background color.</p>
-    <p><strong>Accent Color:</strong> #FF6584 – Used for buttons and highlights.</p>
-    <div class="button-sample">Sample Button</div>
-</section>
+        <label for="installationDate">Date of Installation * :</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+      </fieldset>
 
-<section>
-    <h2>Typography</h2>
-    <p><strong>Poppins:</strong> Used for headings (h1, h2, h3).</p>
-    <p><strong>Roboto:</strong> Used for body text and paragraphs.</p>
-</section>
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Useful Features</legend>
+        <p><strong>(Check all that apply)</strong></p>
 
-<section>
-    <h2>Wireframes</h2>
+        <label><input type="checkbox" id="feature1" name="features" value="Design"> Design</label>
+        <label><input type="checkbox" id="feature2" name="features" value="Durability"> Durability</label>
+        <label><input type="checkbox" id="feature3" name="features" value="Ease of Use"> Ease of Use</label>
+        <label><input type="checkbox" id="feature4" name="features" value="Performance"> Performance</label>
+        <label><input type="checkbox" id="feature5" name="features" value="Value"> Value</label>
+      </fieldset>
 
-    <h3>Mobile View</h3>
-    <div class="wireframe">
-        <div class="box">Header / Logo</div>
-        <div class="box">Scenario Input or Selection</div>
-        <div class="box">Overthinking Simulation Text Area</div>
-        <div class="box">Exit Spiral Button</div>
-        <div class="box">Grounding Prompt Section</div>
-    </div>
+      <!-- Written Review -->
+      <fieldset>
+        <legend>Written Review</legend>
+        <label for="review">Your Review (optional):</label>
+        <textarea id="review" name="review" rows="4" cols="40" placeholder="Write your thoughts about the product..."></textarea>
+      </fieldset>
 
-    <h3>Desktop View</h3>
-    <div class="wireframe">
-        <div class="box">Header / Logo</div>
-        <div class="box">Left: Scenario Selection</div>
-        <div class="box">Right: Simulation Output</div>
-        <div class="box">Bottom: Exit Spiral & Reflection Section</div>
-    </div>
+      <!-- User Name -->
+      <fieldset>
+        <legend>Your Information</legend>
+        <label for="username">Your Name (optional):</label>
+        <input type="text" id="username" name="username" placeholder="Your name">
+      </fieldset>
 
-</section>
+      <!-- Submit -->
+      <input type="submit" value="Post Review">
+    </form>
+  </main>
 
+  <footer>
+    <p>&copy; <span id="currentyear"></span> &#127802; Sephora Krystell Diaz Altamirano &#127802; | Peru</p>
+        <p id="lastModified"> </p>
+  </footer>
 
-    </main>
-    <footer>
-
-    </footer>
-    
+ 
 </body>
-</html> 
+</html>

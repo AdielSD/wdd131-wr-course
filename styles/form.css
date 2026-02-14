@@ -1,0 +1,41 @@
+
+/* ---------- MOBILE VIEW ---------- */
+@media only screen and (max-width: 600px) {
+  header {
+    padding-top: 15px;
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 0.5rem;
+  }
+
+  .pform {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .pform fieldset {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .pform input[type="text"],
+  .pform input[type="date"],
+  .pform select,
+  .pform textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pform input[type="submit"] {
+    width: 100%;
+    max-width: none;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}

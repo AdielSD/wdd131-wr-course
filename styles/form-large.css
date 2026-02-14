@@ -1,0 +1,124 @@
+/*---------- HEADER ----------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    height: 60px;
+}
+
+header {
+    background-color: #03045e;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/*---------- BODY ----------*/
+html,body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+
+/*---------- FORM STYLING ----------*/
+
+.pform  {
+    display: inline-block;
+    align-items: center;
+    box-sizing: border-box;
+    width: 700px;
+    height: auto;
+    background-color: #fff;
+    border: solid 1px #335c67;
+    border-radius: 6px;
+
+}
+
+.pform fieldset {
+    margin: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+
+}
+
+.pform legend {
+    color: #457b9d;
+
+}
+
+.pform label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem ;
+}
+
+
+
+.pform input[type="checkbox"],
+.pform input[type="radio"] {
+
+    margin-right: 6px;
+
+}
+
+
+.pform input[type="text"],
+.pform input[type="date"],
+.pform select{
+    background-color: #eee;
+    display: block;
+    border: solid 2px #457b9d;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #335c67;
+    width: 100%;
+    max-width: 400px;
+}
+
+.pform textarea {
+    width: 100%;
+    max-width: 400px;
+    height: 100px;
+    border-radius: 6px;
+    border: solid 2px #457b9d;
+    color: #335c67;
+    background-color: #eee;
+}
+
+.pform input[type="submit"] {
+display: block;
+border: none;
+background-image: linear-gradient(#0077b6, #00b4d8);
+color: #fff;
+border-radius: 6px;
+padding: .8rem;
+width: 96%;
+max-width: 400px;
+margin: 1rem auto 2rem;
+}
+
+/*---------- FOOTER ----------*/
+
+footer {
+    background-color: #03045e;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
