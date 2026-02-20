@@ -1,110 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Review Form | Sephora Diaz</title>
-  <meta name="author" content="Sephora Diaz">
-  <meta name="description" content="A product review form demonstrating form design and interactivity for WDD 131.">
-
-
-<!----FONT LINKS---->
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<!----STYLESHEETS AND SCRIPT---->
-
-  <link rel="stylesheet" href="styles/form.css">
-  <link rel="stylesheet" href="styles/form-large.css">
-
-  <script src="scripts/form.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overthinker Simulator - Test your inner overthinking tendencies!">
+    <title>Overthinker Simulator | WDD131 project | Sephora Diaz</title>
+    <meta name="author" content="Sephora Diaz"
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-
 <body>
-  <header>
-    <h1>Product Review</h1>
-  </header>
+    <header>
+        <h1>Overthinker Simulator</h1>
+        <p>Find out how much you overthink in different situations!</p>
+    </header>
 
-  <main>
-    <form method="get" action="review.html" class="pform">
-      <!-- Product Selection -->
-      <fieldset>
-        <legend>Product Information</legend>
+    <main>
+        <section>
+            <h2>Input Your Situation</h2>
+            <form id="overthink-form">
+                <label for="situation">Describe a situation:</label>
+                <input type="text" id="situation" name="situation" placeholder="e.g., my friend didn't reply" required>
 
-        <label for="productName">Product Name *</label>
-        <select id="productName" name="productName" required>
-          <option value="" disabled selected>Select a Product...</option>
-        </select>
-      </fieldset>
+                <label for="intensity">Rate your anxiety level (1-10):</label>
+                <input type="number" id="intensity" name="intensity" min="1" max="10" required>
 
-      <!-- Overall Rating -->
-      <fieldset>
-        <legend>Overall Rating</legend>
+                <button type="submit">Simulate Overthinking</button>
+            </form>
+        </section>
 
-        <label for="rating1">
-          <input type="radio" id="rating1" name="rating" value="1" required> ☆
-        </label>
-        <label for="rating2">
-          <input type="radio" id="rating2" name="rating" value="2"> ☆☆
-        </label>
-        <label for="rating3">
-          <input type="radio" id="rating3" name="rating" value="3"> ☆☆☆
-        </label>
-        <label for="rating4">
-          <input type="radio" id="rating4" name="rating" value="4"> ☆☆☆☆
-        </label>
-        <label for="rating5">
-          <input type="radio" id="rating5" name="rating" value="5"> ☆☆☆☆☆
-        </label>
-      </fieldset>
+        <section id="results-section">
+            <h2>Simulation Results</h2>
+            <ul id="results-list">
+                <!-- Results will appear here -->
+            </ul>
+        </section>
 
-      <!-- Installation Date -->
-      <fieldset>
-        <legend>Installation Details</legend>
+        <section>
+            <h2>Tip of the Day</h2>
+            <p id="tip">Loading tip...</p>
+        </section>
 
-        <label for="installationDate">Date of Installation * :</label>
-        <input type="date" id="installationDate" name="installationDate" required>
-      </fieldset>
+        <section>
+    <h2>Your Bunny Mascot</h2>
+    <img src="https://img.pikbest.com/png-images/20250520/cartoon-rabbit-character-with-happy-expression-cute-animated-bunny-animal_11722907.png!w700wp" width="400" height="auto"
+         alt="Cute animated bunny mascot" loading="lazy">
+</section>
 
-      <!-- Useful Features -->
-      <fieldset>
-        <legend>Useful Features</legend>
-        <p><strong>(Check all that apply)</strong></p>
+    <footer>
+        <p>&copy; 2026 Overthinker Simulator</p>
+    </footer>
 
-        <label><input type="checkbox" id="feature1" name="features" value="Design"> Design</label>
-        <label><input type="checkbox" id="feature2" name="features" value="Durability"> Durability</label>
-        <label><input type="checkbox" id="feature3" name="features" value="Ease of Use"> Ease of Use</label>
-        <label><input type="checkbox" id="feature4" name="features" value="Performance"> Performance</label>
-        <label><input type="checkbox" id="feature5" name="features" value="Value"> Value</label>
-      </fieldset>
-
-      <!-- Written Review -->
-      <fieldset>
-        <legend>Written Review</legend>
-        <label for="review">Your Review (optional):</label>
-        <textarea id="review" name="review" rows="4" cols="40" placeholder="Write your thoughts about the product..."></textarea>
-      </fieldset>
-
-      <!-- User Name -->
-      <fieldset>
-        <legend>Your Information</legend>
-        <label for="username">Your Name (optional):</label>
-        <input type="text" id="username" name="username" placeholder="Your name">
-      </fieldset>
-
-      <!-- Submit -->
-      <input type="submit" value="Post Review">
-    </form>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="currentyear"></span> &#127802; Sephora Krystell Diaz Altamirano &#127802; | Peru</p>
-        <p id="lastModified"> </p>
-  </footer>
-
- 
+    <script src="script.js"></script>
 </body>
 </html>
