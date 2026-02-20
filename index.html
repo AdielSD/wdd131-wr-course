@@ -3,53 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Overthinker Simulator - Test your inner overthinking tendencies!">
-    <title>Overthinker Simulator | WDD131 project | Sephora Diaz</title>
-    <meta name="author" content="Sephora Diaz"
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description" content="Overthinker Simulator - Cozy game style!">
+    <title>Overthinker Simulator | Sephora Diaz</title>
+    <meta name="author" content="Sephora Diaz">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link 
+  href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Press+Start+2P&display=swap" 
+  rel="stylesheet">
+
+   
 </head>
 <body>
     <header>
-        <h1>Overthinker Simulator</h1>
-        <p>Find out how much you overthink in different situations!</p>
+        <h1>Overthinker Simulator 🐰</h1>
+        <p>Answer the questions and see how much you overthink!</p>
     </header>
 
     <main>
-        <section>
-            <h2>Input Your Situation</h2>
-            <form id="overthink-form">
-                <label for="situation">Describe a situation:</label>
-                <input type="text" id="situation" name="situation" placeholder="e.g., my friend didn't reply" required>
+        <img id="bunny-backgorund" src="images/cute-bunny.webp" alt="A cute bunny in a cup" loading="lazy">
+        <!-- Progress bar -->
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
 
-                <label for="intensity">Rate your anxiety level (1-10):</label>
-                <input type="number" id="intensity" name="intensity" min="1" max="10" required>
-
-                <button type="submit">Simulate Overthinking</button>
-            </form>
+        <!-- Bunny + Speech bubble -->
+         <section id="bunny-section">
+            <img id="bunny" src="images/bunny2.gif" 
+                 alt="Cute animated bunny mascot" loading="lazy">
+            <div id="speech-bubble">Hi! Let's start overthinking together!</div>
         </section>
 
-        <section id="results-section">
+        <!-- Question form -->
+        <section id="question-section">
+            <h2 id="question-title">Question 1:</h2>
+            <input type="text" id="user-input" placeholder="Type your thoughts..." required>
+            <button id="next-btn">Next</button>
+        </section>
+
+        <!-- Results at the end -->
+        <section id="results-section" class="hidden">
             <h2>Simulation Results</h2>
-            <ul id="results-list">
-                <!-- Results will appear here -->
-            </ul>
+            <ul id="results-list"></ul>
+            <button id="restart-btn">Play Again</button>
         </section>
-
-        <section>
-            <h2>Tip of the Day</h2>
-            <p id="tip">Loading tip...</p>
-        </section>
-
-        <section>
-    <h2>Your Bunny Mascot</h2>
-    <img src="https://img.pikbest.com/png-images/20250520/cartoon-rabbit-character-with-happy-expression-cute-animated-bunny-animal_11722907.png!w700wp" width="400" height="auto"
-         alt="Cute animated bunny mascot" loading="lazy">
-</section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Overthinker Simulator</p>
-    </footer>
+    
 
-    <script src="script.js"></script>
+    <p>&copy; <span id="currentyear"> </span> &#127802; Sephora Krystell Diaz Altamirano | Overthinker Simulator | Lima, Peru &#127802;</p>
+        <p id="lastModified">  </p>
+
+         <script src="script.js"></script>
+  </footer>
 </body>
 </html>
